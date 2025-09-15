@@ -14,6 +14,9 @@ GROUP BY (office_address);
 SELECT AVG(vote) FROM db_university.exam_student;
 
 4. Contare quanti corsi di laurea ci sono per ogni dipartimento
+SELECT degree_id, COUNT(*) 
+FROM db_university.courses
+GROUP BY (degree_id);
 
 
 -SELECT
